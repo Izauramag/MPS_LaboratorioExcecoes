@@ -96,8 +96,7 @@ public class UserControl {
             JOptionPane.showMessageDialog(null, se.getMessage());
         }
     }
-    
-    /**Metodos usados no teste unitario**/
+   
     public static ArrayList<User> get_array_list(){
     	return users;
     }
