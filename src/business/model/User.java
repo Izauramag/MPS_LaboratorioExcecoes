@@ -2,12 +2,19 @@ package business.model;
 
 import business.control.Validator;
 
-public class User {
+public class User implements Serializable{
+    private static final long serialVersionUID = 7333680617913601432L;
+	private static boolean vipGen = false;
+    
     private String login, password;
+    private final boolean vip;
     
     public User(String login, String password){
         this.login = login;
         this.password = password;
+        
+        // The odd users created are VIP
+    	this.vip = vipGen = !vipGen;
     }
     
     public User(String login){
@@ -24,6 +31,10 @@ public class User {
     
     public String get_password(){
         return this.password;
+    }
+    
+    public boolean isVip() {
+    	return this.vip;
     }
     
     public void set_login(String login){
