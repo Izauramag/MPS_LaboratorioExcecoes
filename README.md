@@ -55,3 +55,7 @@ usuário) do seu projeto e implemente testes unitários para cada um de seus mé
 
 5- Na camada business implemente, utilizando Template Method, aa geração de mais um tipo
 de relatórios. Os relatórios devem gerar estatísticas de acesso dos usuários no sistema.
+
+            Respondendo perguntas sobre o laboratório 3: 
+            
+            
