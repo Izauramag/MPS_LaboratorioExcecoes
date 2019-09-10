@@ -56,7 +56,7 @@ usuário) do seu projeto e implemente testes unitários para cada um de seus mé
 5- Na camada business implemente, utilizando Template Method, aa geração de mais um tipo
 de relatórios. Os relatórios devem gerar estatísticas de acesso dos usuários no sistema.
 
-Respondendo perguntas sobre o laboratório 3:
+***Respondendo perguntas sobre o laboratório 3:***
             
 Foi escolhido pelo grupo utilizar Factory Method, que aplicado a infra.DataRepository por meio de infra.RepositoryFactory, o  retorno é uma interface implementada pelo infra.DataRepository. Além disso, temos, Template Method, que foi aplicado em            business.model.Message, que é uma classe abstrata que tem duas classes que herdam, business.model.CommonMessage e                   business.model.VipMessage, que têm comportamentos diferentes para o método getColoredText. Foram implementados dois                     adapters, util.FileInputAdapter e util.FileOutputAdapter para facilitar a leitura e a escrita de objetos em arquivos. O                 padrão Command foi aplicado às operações com business.model.Wall. Há 3 operações, Create, Update e Remove, implementadas em             business.control.WallCommands, mesmo local onde está a interface do Command. Memento, também aplicado a business.model.Wall,             permite desfazer uma das 3 operações feitas com  padrão Command.
 
